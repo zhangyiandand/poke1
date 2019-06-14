@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../jquery-3.4.1.js"></script>
+    <script src="./poke.js"></script>
+
+    <style>
+        .box{
+            width: 800px;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .poke{
+            width: 90px;
+            height: 120px;
+            position: absolute;
+            left: 350px;
+            top: 0;
+            opacity: 0;
+            background-size: cover;
+            background-position: center;
+            border:3px solid #f9bf77 ;
+        }
+        .active{
+            border-color: #f9bf77;
+        }
+        button{
+            width: 80px;
+            height: 60px;
+            border: none;
+            outline: none;
+            color: #000000;
+            border-radius: 10px;
+            position: absolute;
+            left: 350px;
+            bottom: 40px;
+            Z-index: 999;
+        }
+        .leftbtn{
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <button class="leftbtn">
+        &lt
+    </button>
+    <button class="rightbtn">
+        &gt
+    </button>
+</div>
+</body>
+</html>
